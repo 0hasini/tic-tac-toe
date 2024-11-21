@@ -3,31 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
+    <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <div class="msg-container hide">
-            <p id="msg">Winner</p>
-            <button id="new-game">New Game</button>
-        </div>
-        <h1>Tic Tac Toe</h1>
-        <div class="container">
-            <div class="game">
-                <button class="box" id="id1"></button>
-                <button class="box" id="id2"></button>
-                <button class="box" id="id3"></button>
-                <button class="box" id="id4"></button>
-                <button class="box" id="id5"></button>
-                <button class="box" id="id6"></button>
-                <button class="box" id="id7"></button>
-                <button class="box" id="id8"></button>
-                <button class="box" id="id9"></button>
+    <div id="big-board">
+        <div class="box" data-index="0">
+            <div class="small-board">
+                <div class="small-box" data-index="0"></div>
+                <div class="small-box" data-index="1"></div>
+                <div class="small-box" data-index="2"></div>
+                <div class="small-box" data-index="3"></div>
+                <div class="small-box" data-index="4"></div>
+                <div class="small-box" data-index="5"></div>
+                <div class="small-box" data-index="6"></div>
+                <div class="small-box" data-index="7"></div>
+                <div class="small-box" data-index="8"></div>
             </div>
         </div>
-        <button id="reset-game">Reset Game</button>
-    </main>
+        <div class="box" data-index="1">
+            <div class="small-board">
+                <div class="small-box" data-index="0"></div>
+                <div class="small-box" data-index="1"></div>
+                <div class="small-box" data-index="2"></div>
+                <div class="small-box" data-index="3"></div>
+                <div class="small-box" data-index="4"></div>
+                <div class="small-box" data-index="5"></div>
+                <div class="small-box" data-index="6"></div>
+                <div class="small-box" data-index="7"></div>
+                <div class="small-box" data-index="8"></div>
+            </div>
+        </div>
+        <div class="box" data-index="2">
+            <div class="small-board">
+                <div class="small-box" data-index="0"></div>
+                <div class="small-box" data-index="1"></div>
+                <div class="small-box" data-index="2"></div>
+                <div class="small-box" data-index="3"></div>
+                <div class="small-box" data-index="4"></div>
+                <div class="small-box" data-index="5"></div>
+                <div class="small-box" data-index="6"></div>
+                <div class="small-box" data-index="7"></div>
+                <div class="small-box" data-index="8"></div>
+            </div>
+        </div>
+        <div class="box" data-index="3">
+            <div class="small-board">
+                <div class="small-box" data-index="0"></div>
+                <div class="small-box" data-index="1"></div>
+                <div class="small-box" data-index="2"></div>
+                <div class="small-box" data-index="3"></div>
+                <div class="small-box" data-index="4"></div>
+                <div class="small-box" data-index="5"></div>
+                <div class="small-box" data-index="6"></div>
+                <div class="small-box" data-index="7"></div>
+                <div class="small-box" data-index="8"></div>
+            </div>
+        </div>
+        <div class="box" data-index="4">
+            <div class="small-board">
+                <div class="small-box" data-index="0"></div>
+                <div class="small-box" data-index="1"></div>
+                <div class="small-box" data-index="2"></div>
+                <div class="small-box" data-index="3"></div>
+                <div class="small-box" data-index="4"></div>
+                <div class="small-box" data-index="5"></div>
+                <div class="small-box" data-index="6"></div>
+                <div class="small-box" data-index="7"></div>
+                <div class="small-box" data-index="8"></div>
+            </div>
+        </div>
+        <div class="box" data-index="5">
+            <div class="small-board">
+                <div class="small-box" data-index="0"></div>
+                <div class="small-box" data-index="1"></div>
+                <div class="small-box" data-index="2"></div>
+                <div class="small-box" data-index="3"></div>
+                <div class="small-box" data-index="4"></div>
+                <div class="small-box" data-index="5"></div>
+                <div class="small-box" data-index="6"></div>
+                <div class="small-box" data-index="7"></div>
+                <div class="small-box" data-index="8"></div>
+            </div>
+        </div>
+        <div class="box" data-index="6">
+            <div class="small-board">
+                <div class="small-box" data-index="0"></div>
+                <div class="small-box" data-index="1"></div>
+                <div class="small-box" data-index="2"></div>
+                <div class="small-box" data-index="3"></div>
+                <div class="small-box" data-index="4"></div>
+                <div class="small-box" data-index="5"></div>
+                <div class="small-box" data-index="6"></div>
+                <div class="small-box" data-index="7"></div>
+                <div class="small-box" data-index="8"></div>
+            </div>
+        </div>
+        <div class="box" data-index="7">
+            <div class="small-board">
+                <div class="small-box" data-index="0"></div>
+                <div class="small-box" data-index="1"></div>
+                <div class="small-box" data-index="2"></div>
+                <div class="small-box" data-index="3"></div>
+                <div class="small-box" data-index="4"></div>
+                <div class="small-box" data-index="5"></div>
+                <div class="small-box" data-index="6"></div>
+                <div class="small-box" data-index="7"></div>
+                <div class="small-box" data-index="8"></div>
+            </div>
+        </div>
+        <div class="box" data-index="8">
+            <div class="small-board">
+                <div class="small-box" data-index="0"></div>
+                <div class="small-box" data-index="1"></div>
+                <div class="small-box" data-index="2"></div>
+                <div class="small-box" data-index="3"></div>
+                <div class="small-box" data-index="4"></div>
+                <div class="small-box" data-index="5"></div>
+                <div class="small-box" data-index="6"></div>
+                <div class="small-box" data-index="7"></div>
+                <div class="small-box" data-index="8"></div>
+            </div>
+        </div>
+    </div>
+    <div class="msg-container hide">
+        <span id="msg"></span>
+    </div>
+    <button id="new-game">New Game</button>
+    
     <script src="script.js"></script>
 </body>
 </html>
